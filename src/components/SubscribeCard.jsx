@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import iconList from '../images/icon-list.svg'
 import signDesctop from '../images/illustration-sign-up-desktop.svg';
 import signMobile from '../images/illustration-sign-up-desktop.svg';
 
 export default function SubscribeCard({onSubmit}) {
+  const [email, setEmail] = useState('');
+
   function handleClick() {
-    onSubmit();
+    onSubmit(email);
   }
 
     return (
@@ -35,6 +38,8 @@ export default function SubscribeCard({onSubmit}) {
             <input 
               id='email'
               name='email'
+              value={email}
+              onChange={e => setEmail(e.target.value)}
               placeholder='email@company.com'
               className='input'
             />

@@ -3,12 +3,13 @@ import './App.css'
 import SubscribeCard from './components/SubscribeCard'
 import ThankYouCard from './components/ThankYouCard'
 
-
 function App() {
   const [subscribed, setSubscribed] = useState(false);
+  const [email, setEmail] = useState('');
 
-  function handleSubmit() {
+  function handleSubmit(email) {
     setSubscribed(true);
+    setEmail(email);
   }
 
   function handleDismiss() {
@@ -20,7 +21,7 @@ function App() {
       <div className='container'>
         {subscribed
         ?
-        <ThankYouCard onSubmit={handleDismiss}/>      
+        <ThankYouCard email={email} onSubmit={handleDismiss}/>      
         :
         <SubscribeCard onSubmit={handleSubmit}/>
         }
