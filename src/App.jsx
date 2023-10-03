@@ -1,13 +1,13 @@
 import './App.css'
-import SubscribeCard from './components/SubscribeCard';
-
+import SubscribeCard from './components/SubscribeCard'
+import ThankYouCard from './components/ThankYouCard'
 
 
 function App() {
   return (
     <div className='wrapper'>
       <div className='container'>
-        <SubscribeCard />
+        <ThankYouCard />
       </div>
     </div>
   )

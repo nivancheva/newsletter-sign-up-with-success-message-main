@@ -1,0 +1,15 @@
+.icon-success {
+    margin: 9rem 0 2.5rem 0;
+}
+
+.thankYou-header {
+    margin-bottom: 1.5rem;
+}
+
+.button-dismiss {
+    margin-top: 16.5rem;
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
