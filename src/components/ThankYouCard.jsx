@@ -1,7 +1,11 @@
 import iconSuccess from '../images/icon-success.svg'
 import './ThankYouCard.css';
 
-export default function ThankYouCard() {
+export default function ThankYouCard({onSubmit}) {
+    function handleClick() {
+        onSubmit();
+    }
+
     return (
         <div className='thankYou-card grid-container'>
            
@@ -11,7 +15,7 @@ export default function ThankYouCard() {
                 <p>A confirmation email has been sent to <span className='bold'>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
             </div>
 
-            <button className='button button-dismiss'>Dismiss message</button>
+            <button className='button button-dismiss' onClick={handleClick}>Dismiss message</button>
         </div>
     )
 }

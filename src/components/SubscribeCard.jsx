@@ -2,7 +2,11 @@ import iconList from '../images/icon-list.svg'
 import signDesctop from '../images/illustration-sign-up-desktop.svg';
 import signMobile from '../images/illustration-sign-up-desktop.svg';
 
-export default function SubscribeCard() {
+export default function SubscribeCard({onSubmit}) {
+  function handleClick() {
+    onSubmit();
+  }
+
     return (
         <>
         <picture className='signUp-image'>
@@ -35,7 +39,7 @@ export default function SubscribeCard() {
               className='input'
             />
           </div>
-          <button className='button'>Subscribe to monthly newsletter</button>
+          <button className='button' onClick={handleClick}>Subscribe to monthly newsletter</button>
         </div>
         </>
     )
