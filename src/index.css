@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --clr-tomato: hsl(4, 100%, 67%);
+    --clr-tomato-dark: hsl(4, 100%, 62%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-dark-gray: hsl(234, 29%, 20%);
+    --clr-gray: hsl(231, 7%, 60%);
+    --clr-charcol-gray: hsl(235, 18%, 26%);
+
+    --fz-main: 1rem;
+
+    --ff-main: 'Roboto';
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+ }
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-size: var(--fz-main);
+    font-weight: var(--fw-);
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-white);
+    padding: 1.125rem 4.5rem;
+    border-radius: .5rem;
+}
+
+.button:hover {
+    background-image: linear-gradient(var(--clr-tomato), var(--clr-tomato-dark));
+    box-shadow: var(--clr-tomato) 0px 18px 50px -10px;
+}
+
+.label {
+    font-weight: var(--fw-bold);
+}
+
+.input {
+    cursor: pointer;
+    padding: 1rem 12rem 1rem 1.5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--clr-gray);
+}

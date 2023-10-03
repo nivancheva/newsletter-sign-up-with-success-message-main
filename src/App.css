@@ -1,0 +1,15 @@
+.toRemove {
+  display: grid;
+  gap: 2rem
+}
+
+.list {
+  display: grid;
+  gap: .625rem
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.625rem
+}
