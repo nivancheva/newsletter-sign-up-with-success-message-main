@@ -14,6 +14,7 @@ function App() {
 
   function handleDismiss() {
     setSubscribed(false);
+    setEmail('');
   }
 
   return (
