@@ -6,10 +6,10 @@ import signMobile from './images/illustration-sign-up-desktop.svg';
 
 function App() {
   return (
-    <div className='wraper'>
+    <div className='wrapper'>
       <div className='container'>
-        <picture>
-          <source srcSet={signDesctop} media="(min-width:600px)"/>
+        <picture className='signUp-image'>
+          <source srcSet={signDesctop} media="(min-width:900px)"/>
           <img src={signMobile}/>
         </picture>
         <div className='card-content grid-container'>

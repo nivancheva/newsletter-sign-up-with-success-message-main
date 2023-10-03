@@ -1,3 +1,14 @@
+.container {
+  display: grid;
+  justify-content: center;
+  max-width: 375px;
+  margin-inline: auto;
+}
+
+.signUp-image {
+  max-width: 375px;
+}
+
 .grid-container {
   padding: 1.5rem;
 }
@@ -16,4 +27,33 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem
+}
+
+@media (min-width:900px) {
+  body {
+    background-color: var(--clr-dark-gray);
+  }
+  .wrapper {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  .container {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    max-width: 928px;
+    margin-inline: 5rem;
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+    padding: 1.25rem 1.25rem 1.25rem 0;
+  }
+
+  .card-content {
+    padding: 4.75rem 2.75rem;
+  }
+
+  .signUp-image {
+    order: 1;
+    width: 100%;
+  }
 }
