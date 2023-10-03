@@ -67,6 +67,9 @@ ul {
 .label {
     font-weight: var(--fw-bold);
     display: block;
+    color: var(--clr-dark-gray);
+    font-size: .75rem;
+    margin-bottom: .5rem;
 }
 
 .input {

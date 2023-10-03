@@ -29,13 +29,15 @@ function App() {
               <p>And much more</p>
             </li>
           </ul>
-          <label className='label' htmlFor='email'>Email adress</label>
-          <input 
-            id='email'
-            name='email'
-            placeholder='email@company.com'
-            className='input'
-          />
+          <div>
+            <label className='label' htmlFor='email'>Email adress</label>
+            <input 
+              id='email'
+              name='email'
+              placeholder='email@company.com'
+              className='input'
+            />
+          </div>
           <button className='button'>Subscribe to monthly newsletter</button>
         </div>
       </div>
