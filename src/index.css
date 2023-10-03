@@ -41,6 +41,7 @@ body {
 
 h1 {
     font-weight: var(--fw-bold);
+    font-size: 2.5rem;
 }
 
 ul {
@@ -53,8 +54,9 @@ ul {
     border: 0;
     background-color: var(--clr-dark-gray);
     color: var(--clr-white);
-    padding: 1.125rem 4.5rem;
+    padding: 1.125rem 1rem;
     border-radius: .5rem;
+    width: 100%;
 }
 
 .button:hover {
@@ -64,11 +66,14 @@ ul {
 
 .label {
     font-weight: var(--fw-bold);
+    display: block;
 }
 
 .input {
+    width: 100%;
     cursor: pointer;
-    padding: 1rem 12rem 1rem 1.5rem;
+    padding: 1.125rem 1rem 1rem 1.125rem;
     border-radius: .5rem;
     border: 1px solid var(--clr-gray);
+    text-align: left;
 }

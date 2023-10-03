@@ -1,6 +1,10 @@
-.toRemove {
+.grid-container {
+  padding: 1.5rem;
+}
+
+.grid-container {
   display: grid;
-  gap: 2rem
+  gap: 1.5rem
 }
 
 .list {
@@ -11,5 +15,5 @@
 .list-item {
   display: flex;
   align-items: flex-start;
-  gap: 1.625rem
+  gap: 1rem
 }
