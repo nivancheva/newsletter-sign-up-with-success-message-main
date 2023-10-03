@@ -7,9 +7,24 @@
 }
 
 .button-dismiss {
-    margin-top: 16.5rem;
+    margin-top: 10rem;
 }
 
 .bold {
     font-weight: var(--fw-bold);
+}
+
+@media (min-width:900px) {
+    .thankYou-card {
+        width: 504px;
+        padding: 1.75rem 3rem 3rem;
+    }
+
+    .button-dismiss {
+        margin: 0;
+    }
+
+    .icon-success {
+        margin: 0;
+    }
 }
