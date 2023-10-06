@@ -33,7 +33,7 @@ export default function SubscribeCard({onSubmit}) {
               <p>And much more</p>
             </li>
           </ul>
-          <div>
+          <form>
             <label className='label' htmlFor='email'>Email adress</label>
             <input 
               id='email'
@@ -43,7 +43,7 @@ export default function SubscribeCard({onSubmit}) {
               placeholder='email@company.com'
               className='input'
             />
-          </div>
+          </form>
           <button className='button' onClick={handleClick}>Subscribe to monthly newsletter</button>
         </div>
         </>
