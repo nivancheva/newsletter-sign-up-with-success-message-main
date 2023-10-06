@@ -12,6 +12,9 @@
 .grid-container {
   display: grid;
   gap: 1.5rem;
+}
+
+.card-content {
   padding: 1.5rem;
 }
 
@@ -24,6 +27,18 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem
+}
+
+.input_form {
+  position: relative;
+}
+
+.errors {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .75rem;
+  color: var(--clr-tomato-dark);
 }
 
 @media (min-width:900px) {
