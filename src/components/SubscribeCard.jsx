@@ -49,14 +49,14 @@ export default function SubscribeCard({onSubmit}) {
             </li>
           </ul>
           <form className='grid-container' onSubmit={handleSubmit(handleFormSubmit)}>
-            <div className='input_form'>
+            <div className={`input_form${errors.email?.message ? " input-error" : ""}`}>
               <label className='label' htmlFor='email'>Email adress</label>
-              {errors.email?.message && <p className='errors'>{errors.email?.message}</p>}
+              <p className='errors'>{errors.email?.message}</p>
               <input
                 {...register("email")}
                 id="email"
                 placeholder='email@company.com'
-                className='input'
+                className="input"
               />
             </div>
            <button className='button'>Subscribe to monthly newsletter</button>

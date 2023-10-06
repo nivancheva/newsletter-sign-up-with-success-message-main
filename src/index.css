@@ -2,6 +2,7 @@
 
 :root {
     --clr-tomato: hsl(4, 100%, 67%);
+    --clr-error-bg: hsl(6, 67%, 91%);
     --clr-tomato-dark: hsl(4, 100%, 62%);
     --clr-white: hsl(0, 0%, 100%);
     --clr-dark-gray: hsl(234, 29%, 20%);
@@ -64,6 +65,10 @@ ul {
     box-shadow: var(--clr-tomato) 0px 18px 50px -10px;
 }
 
+.input_form {
+  position: relative;
+}
+
 .label {
     font-weight: var(--fw-bold);
     display: block;
@@ -79,4 +84,23 @@ ul {
     border-radius: .5rem;
     border: 1px solid var(--clr-gray);
     text-align: left;
+}
+
+.errors {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .75rem;
+  color: var(--clr-tomato-dark);
+}
+
+.input-error .input {
+    border: 1px solid var(--clr-tomato);
+    background-color: var(--clr-error-bg);
+    color: var(--clr-tomato-dark);
+}
+
+.input-error .errors {
+  display: block;
 }

@@ -29,18 +29,6 @@
   gap: 1rem
 }
 
-.input_form {
-  position: relative;
-}
-
-.errors {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: .75rem;
-  color: var(--clr-tomato-dark);
-}
-
 @media (min-width:900px) {
   body {
     background-color: var(--clr-dark-gray);
